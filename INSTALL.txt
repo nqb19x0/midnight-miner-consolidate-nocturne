@@ -1,0 +1,108 @@
+================================================================================
+MIDNIGHT MINER - INSTALLATION INSTRUCTIONS
+================================================================================
+
+IMPORTANT: You encountered the "Cannot find module" error because you need to
+install the required packages first!
+
+================================================================================
+SOLUTION (DO THIS NOW):
+================================================================================
+
+Open Command Prompt or Terminal in the folder where you have the files, then run:
+
+    npm install
+
+This will download and install all required packages.
+
+After that completes, run the tool again:
+
+    run.bat         (on Windows)
+    ./run.sh        (on Mac/Linux)
+
+================================================================================
+DETAILED STEPS FOR WINDOWS:
+================================================================================
+
+1. Open the folder where you downloaded all the files (C:\midnightminer\)
+
+2. Click in the address bar at the top and type: cmd
+   Press Enter
+   (This opens Command Prompt in this folder)
+
+3. Type this command and press Enter:
+   npm install
+
+4. Wait for it to finish (may take 2-5 minutes)
+
+5. When done, type:
+   run.bat
+
+================================================================================
+DETAILED STEPS FOR MAC/LINUX:
+================================================================================
+
+1. Open Terminal
+
+2. Navigate to the folder:
+   cd ~/midnightminer
+   (or wherever you put the files)
+
+3. Install packages:
+   npm install
+
+4. Make the script executable:
+   chmod +x run.sh
+
+5. Run the tool:
+   ./run.sh
+
+================================================================================
+WHAT GETS INSTALLED:
+================================================================================
+
+The npm install command downloads these packages:
+- @emurgo/cardano-serialization-lib-nodejs (Cardano wallet functions)
+- axios (API communication)
+- bip39 (Mnemonic phrase handling)
+- cbor (Data encoding for signatures)
+
+All packages are open source and safe.
+
+================================================================================
+STILL HAVING ISSUES?
+================================================================================
+
+1. Make sure Node.js is installed:
+   node --version
+   (should show v16.0.0 or higher)
+
+2. Make sure npm is installed:
+   npm --version
+   (should show a version number)
+
+3. If Node.js is not installed:
+   Download from: https://nodejs.org/
+   Install the LTS version
+
+4. Make sure you're in the correct folder:
+   Windows: dir (should list consolidate.js, package.json, etc.)
+   Mac/Linux: ls (should list consolidate.js, package.json, etc.)
+
+5. If npm install fails, try:
+   npm cache clean --force
+   npm install
+
+================================================================================
+NEXT TIME:
+================================================================================
+
+You only need to run "npm install" ONCE (the first time).
+
+After that, you can just run:
+- run.bat (Windows)
+- ./run.sh (Mac/Linux)
+
+The run scripts now automatically check and install packages if needed!
+
+================================================================================
