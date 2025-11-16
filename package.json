@@ -1,0 +1,28 @@
+{
+  "name": "midnight-miner-consolidate",
+  "version": "1.0.0",
+  "description": "Midnight Miner - Wallet Consolidation Tool",
+  "main": "consolidate.js",
+  "scripts": {
+    "start": "node consolidate.js",
+    "test": "node consolidate.js --help"
+  },
+  "keywords": [
+    "midnight",
+    "miner",
+    "consolidate",
+    "cardano",
+    "night"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@emurgo/cardano-serialization-lib-nodejs": "^12.0.0",
+    "axios": "^1.6.0",
+    "bip39": "^3.1.0",
+    "cbor": "^9.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
